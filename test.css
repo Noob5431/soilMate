@@ -1,0 +1,110 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6fef8;
+    text-align: center;
+}
+
+.titleBar{
+    background-color: #00CC00;
+    border: 2px solid #00CC00;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    max-width: 1920px;
+    max-height: 90px;
+    margin: 0px;
+    padding: 1px 1px;
+    position: relative;
+}
+
+.titleBar h1{
+    color: #fffff0;
+    text-align: center;
+}
+
+.titleBar img{
+    float: left;
+    margin: 20px;
+    padding: 5px 2px;
+
+}
+
+.logo{
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.fields{
+    margin-top: 100px;;
+    display: inline-block;
+
+}
+.fields input{
+    margin-bottom: 15px;
+
+
+}
+
+.fields label{
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+}
+
+.button {
+    position: relative;
+    background-color: #00CC00;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    transition: all 0.15s;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: #3e8e41;
+    transform: scale(1.1);
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
